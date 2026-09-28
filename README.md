@@ -2,6 +2,8 @@
 
 DriveNow is a front-end car rental booking website designed for browsing available cars, viewing offers, booking a vehicle, and tracking reservations in the browser.
 
+<img width="1917" height="970" alt="image" src="https://github.com/user-attachments/assets/5539db82-83a4-4648-ab33-bbf5e7ea06a5" />
+
 ## Overview
 
 This project is a static web application built with HTML, CSS, Bootstrap, and JavaScript. It simulates a car rental experience with multiple pages for browsing vehicles, selecting offers, and completing bookings.
