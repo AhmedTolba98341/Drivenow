@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DriveNow - Cars</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- start top bar -->
+
+<div class="top_bar text-center">
+
+    <p class="mb-0">
+        DriveNow - Your journey starts here
+    </p>
+
+</div>
+
+<!-- end top bar -->
+
+
+<!-- start navbar -->
+
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="home.html">
+            DriveNow
+        </a>
+
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbar">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="home.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link active" href="cars.html">
+                        Cars
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="offers.html">
+                        Offers
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="locations.html">
+                        Locations
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="about.html">
+                        About Us
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="bookings.html">
+                        My Bookings
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <!-- login button -->
+
+            <a href="login.html"
+               id="login_button"
+               class="login_button rounded-pill">
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- end navbar -->
+
+
+<!-- start cars -->
+
+<div class="cars_section">
+
+    <div class="container">
+
+
+        <!-- title -->
+
+        <div class="cars_title text-center">
+
+            <span>
+                OUR CARS
+            </span>
+
+            <h1>
+                Choose your perfect car
+            </h1>
+
+            <p>
+                Find the right car for your next journey.
+            </p>
+
+        </div>
+
+
+        <!-- start search -->
+
+        <div class="car_search">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-8">
+
+                    <input
+                        type="text"
+                        id="search_car"
+                        class="form-control"
+                        placeholder="Search for a car">
+
+                </div>
+
+
+                <div class="col-md-4">
+
+                    <a href="#"
+                       id="search_button"
+                       class="search_button rounded-pill">
+
+                        Search
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- end search -->
+
+
+        <!-- start cars cards -->
+
+        <div class="row">
+
+
+            <!-- car 1 -->
+
+            <div class="col-md-4 car_card">
+
+                <div class="car_item" id="bmw">
+
+                    <img src="images/car1.jpg"
+                         alt="BMW 5 Series">
+
+
+                    <div class="car_content">
+
+                        <h4 class="car_name">
+                            BMW 5 Series
+                        </h4>
+
+                        <p>
+                            Sedan
+                        </p>
+
+                        <p>
+                            5 Seats | Automatic
+                        </p>
+
+                        <h5>
+                            $80 / day
+                        </h5>
+
+
+                        <a href="#"
+                           class="car_button rounded-pill"
+                           onclick="bookCar('BMW 5 Series'); return false;">
+
+                            Book Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- car 2 -->
+
+            <div class="col-md-4 car_card">
+
+                <div class="car_item" id="mercedes">
+
+                    <img src="images/car2.jpg"
+                         alt="Mercedes C-Class">
+
+
+                    <div class="car_content">
+
+                        <h4 class="car_name">
+                            Mercedes C-Class
+                        </h4>
+
+                        <p>
+                            Sedan
+                        </p>
+
+                        <p>
+                            5 Seats | Automatic
+                        </p>
+
+                        <h5>
+                            $90 / day
+                        </h5>
+
+
+                        <a href="#"
+                           class="car_button rounded-pill"
+                           onclick="bookCar('Mercedes C-Class'); return false;">
+
+                            Book Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- car 3 -->
+
+            <div class="col-md-4 car_card">
+
+                <div class="car_item" id="audi">
+
+                    <img src="images/car3.jpg"
+                         alt="Audi A6">
+
+
+                    <div class="car_content">
+
+                        <h4 class="car_name">
+                            Audi A6
+                        </h4>
+
+                        <p>
+                            Sedan
+                        </p>
+
+                        <p>
+                            5 Seats | Automatic
+                        </p>
+
+                        <h5>
+                            $85 / day
+                        </h5>
+
+
+                        <a href="#"
+                           class="car_button rounded-pill"
+                           onclick="bookCar('Audi A6'); return false;">
+
+                            Book Now
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- end cars cards -->
+
+    </div>
+
+</div>
+
+<!-- end cars -->
+
+
+<!-- start footer -->
+
+<div class="footer_section">
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <!-- about -->
+
+            <div class="col-md-4">
+
+                <h3>
+                    DriveNow
+                </h3>
+
+                <p>
+                    Your trusted car rental service.
+                    Find your perfect car and enjoy
+                    your journey.
+                </p>
+
+            </div>
+
+
+            <!-- quick links -->
+
+            <div class="col-md-4">
+
+                <h5>
+                    Quick Links
+                </h5>
+
+                <ul>
+
+                    <li>
+
+                        <a href="home.html">
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="cars.html">
+                            Cars
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="offers.html">
+                            Offers
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="locations.html">
+                            Locations
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="bookings.html">
+                            My Bookings
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- contact -->
+
+            <div class="col-md-4">
+
+                <h5>
+                    Contact Us
+                </h5>
+
+                <p>
+                    Email: info@drivenow.com
+                </p>
+
+                <p>
+                    Phone: +20 123 456 789
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <p class="text-center copyright">
+
+            © 2026 DriveNow. All rights reserved.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- end footer -->
+
+
+
+<!-- bootstrap js -->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- font awesome js -->
+
+<script src="js/all.min.js"></script>
+
+<!-- my js -->
+
+<script src="js/drivenow.js"></script>
+
+</body>
+
+</html>

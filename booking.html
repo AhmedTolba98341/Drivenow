@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DriveNow - Booking</title>
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="css/all.min.css">
+
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+<!-- start top bar -->
+
+<div class="top_bar text-center">
+
+    <p class="mb-0">
+        DriveNow - Your journey starts here
+    </p>
+
+</div>
+
+<!-- end top bar -->
+
+
+<!-- start navbar -->
+
+<nav class="navbar navbar-expand-lg">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="home.html">
+            DriveNow
+        </a>
+
+
+        <button class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbar">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbar">
+
+            <ul class="navbar-nav ms-auto">
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="home.html">
+                        Home
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="cars.html">
+                        Cars
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="offers.html">
+                        Offers
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="locations.html">
+                        Locations
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="about.html">
+                        About Us
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="bookings.html">
+                        My Bookings
+                    </a>
+
+                </li>
+
+            </ul>
+
+
+            <!-- login button -->
+
+            <a href="login.html"
+               id="login_button"
+               class="login_button rounded-pill">
+
+                Login
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- end navbar -->
+
+
+<!-- start booking section -->
+
+<div class="booking_section">
+
+    <div class="container">
+
+
+        <!-- start title -->
+
+        <div class="booking_title text-center">
+
+            <span>
+                BOOK YOUR CAR
+            </span>
+
+            <h1>
+                Complete Your Booking
+            </h1>
+
+            <p>
+                Enter your information and enjoy your journey.
+            </p>
+
+        </div>
+
+        <!-- end title -->
+
+
+        <!-- start booking form -->
+
+        <div class="booking_form">
+
+            <div class="row">
+
+
+                <!-- selected car -->
+
+                <div class="col-md-12">
+
+                    <label>
+                        Selected Car
+                    </label>
+
+                    <div class="input_box">
+
+                        <i class="fa-solid fa-car"></i>
+
+                        <input
+                            type="text"
+                            id="selected_car"
+                            placeholder="Selected car"
+                            readonly>
+
+                    </div>
+
+                </div>
+
+
+                <!-- name -->
+
+                <div class="col-md-6">
+
+                    <label>
+                        Full Name
+                    </label>
+
+                    <div class="input_box">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <input
+                            type="text"
+                            id="customer_name"
+                            placeholder="Enter your name">
+
+                    </div>
+
+                </div>
+
+
+                <!-- email -->
+
+                <div class="col-md-6">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <div class="input_box">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="customer_email"
+                            placeholder="Enter your email">
+
+                    </div>
+
+                </div>
+
+
+                <!-- location -->
+
+                <div class="col-md-12">
+
+                    <label>
+                        Pick-up Location
+                    </label>
+
+                    <div class="input_box">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                        <input
+                            type="text"
+                            id="pickup_location"
+                            placeholder="Enter pick-up location">
+
+                    </div>
+
+                </div>
+
+
+                <!-- pick-up date -->
+
+                <div class="col-md-6">
+
+                    <label>
+                        Pick-up Date
+                    </label>
+
+                    <div class="input_box">
+
+                        <i class="fa-solid fa-calendar"></i>
+
+                        <input
+                            type="date"
+                            id="pickup_date">
+
+                    </div>
+
+                </div>
+
+
+                <!-- return date -->
+
+                <div class="col-md-6">
+
+                    <label>
+                        Return Date
+                    </label>
+
+                    <div class="input_box">
+
+                        <i class="fa-solid fa-calendar"></i>
+
+                        <input
+                            type="date"
+                            id="return_date">
+
+                    </div>
+
+                </div>
+
+
+                <!-- button -->
+
+                <div class="col-md-12 text-center">
+
+                    <a href="#"
+                       class="booking_button rounded-pill"
+                       onclick="confirmBooking(); return false;">
+
+                        Confirm Booking
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- end booking form -->
+
+
+    </div>
+
+</div>
+
+<!-- end booking section -->
+
+
+<!-- start footer -->
+
+<div class="footer_section">
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <!-- about -->
+
+            <div class="col-md-4">
+
+                <h3>
+                    DriveNow
+                </h3>
+
+                <p>
+                    Your trusted car rental partner.
+                    Find the perfect car and enjoy
+                    your journey.
+                </p>
+
+            </div>
+
+
+            <!-- quick links -->
+
+            <div class="col-md-4">
+
+                <h5>
+                    Quick Links
+                </h5>
+
+                <ul>
+
+                    <li>
+
+                        <a href="home.html">
+                            Home
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="cars.html">
+                            Cars
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="offers.html">
+                            Offers
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="locations.html">
+                            Locations
+                        </a>
+
+                    </li>
+
+
+                    <li>
+
+                        <a href="bookings.html">
+                            My Bookings
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- contact -->
+
+            <div class="col-md-4">
+
+                <h5>
+                    Contact Us
+                </h5>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    +20 100 000 0000
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    info@drivenow.com
+                </p>
+
+
+                <div class="social_icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <p class="copyright text-center">
+
+            © 2026 DriveNow. All rights reserved.
+
+        </p>
+
+    </div>
+
+</div>
+
+<!-- end footer -->
+
+
+<!-- bootstrap js -->
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+<!-- font awesome js -->
+
+<script src="js/all.min.js"></script>
+
+
+<!-- my js -->
+
+<script src="js/drivenow.js"></script>
+
+
+</body>
+
+</html>
